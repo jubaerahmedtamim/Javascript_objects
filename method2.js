@@ -2,9 +2,7 @@ function Product(productID, price){
     this.productID = productID;
     this.price = price;
     this.changePrice = function(discount){
-        const discountedPercent = discount /100;
-        this.price = this.price - (discountedPercent * this.price)
-        
+        this.price = this.price - ((discount / 100) * this.price);  
     }
 }
 
